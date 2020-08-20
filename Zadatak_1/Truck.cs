@@ -9,6 +9,9 @@ namespace Zadatak_1
 {
     class Truck : Vehicle
     {
+        /// <summary>
+        /// Class responsible for creating Truck type objects, while deriving from Vehicle base class.
+        /// </summary>
         public double Capacity { get; set; }
         public double Height { get; set; }
         public int Seats { get; set; }
@@ -24,6 +27,9 @@ namespace Zadatak_1
             LicenceNumber = liLicenceNumber;
         }
 
+        /// <summary>
+        /// Method overriden and set to initiate each thread upon demand.
+        /// </summary>
         public override void Start()
         {
             Thread t = new Thread(Program.RaceStarts);

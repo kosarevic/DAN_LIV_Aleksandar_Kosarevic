@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Zadatak_1
 {
+    /// <summary>
+    /// Class responsible for creating Tractor type objects, while deriving from Vehicle base class.
+    /// </summary>
     class Tractor : Vehicle
     {
         public double TireSize { get; set; }
@@ -24,6 +27,9 @@ namespace Zadatak_1
             LicenceNumber = liLicenceNumber;
         }
 
+        /// <summary>
+        /// Method overriden and set to initiate each thread upon demand.
+        /// </summary>
         public override void Start()
         {
             Thread t = new Thread(Program.RaceStarts);

@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Zadatak_1
 {
+    /// <summary>
+    /// Class responsible for creating Car type objects, while deriving from Vehicle base class.
+    /// </summary>
     class Car : Vehicle
     {
         public int Doors { get; set; }
@@ -31,6 +34,9 @@ namespace Zadatak_1
             LicenceNumber = newLicenceNumber;
         }
 
+        /// <summary>
+        /// Method overriden and set to initiate each thread upon demand.
+        /// </summary>
         public override void Start()
         {
             Thread t = new Thread(Program.RaceStarts);

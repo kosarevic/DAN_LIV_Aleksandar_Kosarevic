@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Zadatak_1
 {
+    /// <summary>
+    /// Base class to be inherited by other classes.
+    /// </summary>
     abstract class Vehicle
     {
         public int Id { get; set; }
